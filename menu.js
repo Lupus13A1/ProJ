@@ -80,41 +80,42 @@ const products = [
 
 const projectSection = document.getElementById("Projects");
 
-products.forEach((product) => {
-  const productHTML = `
-    
+products.forEach(({ id, category, image, name, price }) => {
+  projectSection.insertAdjacentHTML(
+    "beforeend",
+    `
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-      <a href="#" onclick="saveProductDetails('${product.id}')">
-        <img src="${product.image}" alt="${product.name}" class="h-80 w-72 object-cover rounded-t-xl" />
+      <a href="#" onclick="saveProductDetails('${id}')">
+        <img src="${image}" alt="${name}" class="h-80 w-72 object-cover rounded-t-xl" />
         <div class="px-4 py-3 w-72">
-          <span class="text-gray-400 mr-3 uppercase text-xs">${product.category}</span>
-          <p class="text-lg font-bold text-black truncate block capitalize">${product.name}</p>
+          <span class="text-gray-400 mr-3 uppercase text-xs">${category}</span>
+          <p class="text-lg font-bold text-black truncate block capitalize">${name}</p>
           <div class="flex items-center">
-            <p class="text-lg font-semibold text-black cursor-auto my-3">${product.price}</p>
+            <p class="text-lg font-semibold text-black cursor-auto my-3">${price}</p>
           </div>
         </div>
       </a>
-      
     </div>
-  `;
-  projectSection.innerHTML += productHTML;
+    `
+  );
 });
 
 function saveProductDetails(id) {
   const product = products.find((p) => p.id === id);
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart.push(product);
-  localStorage.setItem("cart", JSON.stringify(cart));
 
-  // แสดง SweetAlert เมื่อเพิ่มสินค้าลงในตะกร้า
-  Swal.fire({
-    title: "เพิ่มลงในตะกร้า!",
-    text: `คุณได้เพิ่ม "${product.name}" ลงในตะกร้าแล้ว`,
-    icon: "success",
-    confirmButtonText: "ตกลง",
-  });
+  if (!cart.some((item) => item.id === id)) {
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
 
-  // อัปเดตจำนวนสินค้าที่อยู่ในตะกร้าใน navbar
-  updateCartCount();
+    Swal.fire({
+      title: "เพิ่มลงในตะกร้า!",
+      text: `คุณได้เพิ่ม "${product.name}" ลงในตะกร้าแล้ว`,
+      icon: "success",
+      confirmButtonText: "ตกลง",
+    });
+
+    updateCartCount(); // อัปเดตจำนวนสินค้าที่อยู่ในตะกร้า
+  }
 }

@@ -1,26 +1,22 @@
 // เปิด modal เมื่อกดปุ่ม
-document
-  .getElementById("openModalButton")
-  .addEventListener("click", function () {
-    document.getElementById("videoModal").classList.remove("hidden");
-  });
+document.getElementById("openModalButton").addEventListener("click", () => {
+  document.getElementById("videoModal").classList.remove("hidden");
+});
 
 // ปิด modal เมื่อกดปุ่มปิด
-document
-  .getElementById("closeModalButton")
-  .addEventListener("click", function () {
-    var videoModal = document.getElementById("videoModal");
-    var iframe = document.getElementById("youtubeVideo");
+document.getElementById("closeModalButton").addEventListener("click", () => {
+  const videoModal = document.getElementById("videoModal");
+  const iframe = document.getElementById("youtubeVideo");
 
-    // หยุดเล่นวิดีโอเมื่อปิด modal
-    iframe.src = iframe.src;
+  // หยุดเล่นวิดีโอเมื่อปิด modal
+  iframe.src = iframe.src;
 
-    // ซ่อน modal
-    videoModal.classList.add("hidden");
-  });
+  // ซ่อน modal
+  videoModal.classList.add("hidden");
+});
 
 // ฟังก์ชันสำหรับอัปเดตจำนวนสินค้าที่อยู่ในตะกร้า
-function updateCartCount() {
+const updateCartCount = () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartItemCount = document.getElementById("cartItemCount");
 
@@ -28,7 +24,7 @@ function updateCartCount() {
   if (cartItemCount) {
     cartItemCount.textContent = cart.length;
   }
-}
+};
 
 // เรียกใช้ฟังก์ชันนี้เมื่อโหลดหน้าเว็บ
 document.addEventListener("DOMContentLoaded", updateCartCount);
