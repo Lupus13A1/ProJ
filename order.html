@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/assets/css/tailwind.min.css" rel="stylesheet" />
+    <title>Order</title>
+</head>
+
+<body class="bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-cover">
+    <nav class="py-5 border-b-default border-solid border-gray-200 z-20 w-full bg-inherit lg:fixed" id="topnav">
+        <div class="mx-auto max-w-7xl  lg:px-8">
+            <div class="w-full flex flex-col lg:flex-row">
+                <div class="flex justify-between lg:hidden px-4">
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/Logo.png" alt="ครัว ก.ระกา" class='w-20 h-20' />
+                    </a>
+                    <button data-collapse-toggle="navbar" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden w-full lg:flex justify-between max-lg:bg-white py-5 max-lg:mt-1 max-lg:px-4 max-lg:shadow-lg max-lg:shadow-gray-200 max-lg:h-auto max-lg:overflow-auto transition-all duration-500 delay-200 "
+                    id="navbar">
+                    <ul
+                        class="flex lg:items-center max-lg:gap-4 max-lg:mb-4 flex-col mt-4 lg:flex-1 md:mt-0 lg:flex-row">
+                        <li>
+                            <a href="index.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">หน้าแรก</a>
+                        </li>
+                        <li>
+                            <a href="menu.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">รายการอาหาร</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">เกี่ยวกับร้าน</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">ติดต่อ</a>
+                        </li>
+                    </ul>
+                    <a href="index.html" class="hidden lg:flex items-center">
+                        <img src="img/Logo.png" alt="ครัว ก.ระกา" class='w-20 h-20' />
+                    </a>
+                    <div
+                        class="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:flex-1 lg:justify-end">
+                        <div class='flex items-center space-x-8'>
+                            <span class="relative">
+                                <a href="order.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        class="cursor-pointer fill-[#333] inline" viewBox="0 0 512 512">
+                                        <path
+                                            d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                            data-original="#000000"></path>
+                                    </svg>
+                                </a>
+                                <span
+                                    class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"
+                                    id="cartItemCount">0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav><br><br><br><br><br><br>
+
+    <!-- <section class="py-8 antialiased md:py-16">
+        <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">ตะกร้าสินค้า</h2>
+            <form action="#" method="post">
+                <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+                    <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
+                        <div class="space-y-6">
+                            <div
+                                class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
+                                <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+
+                                    <img class="h-20 w-20 dark:hidden" src="img/menu11.jfif" alt="imac image" />
+
+
+                                    <div class="flex items-center justify-between md:order-3 md:justify-end">
+                                        <div class="flex items-center">
+
+                                        </div>
+                                        <div class="text-end md:order-4 md:w-32">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">150 บาท</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
+                                        <p class="text-base font-medium text-gray-900 dark:text-white">ต้มยำกุ้ง</p>
+
+                                        <div class="flex items-center gap-4">
+                                            <button type="button"
+                                                class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
+                                                <svg class="me-1.5 h-5 w-5" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M6 18 17.94 6M18 18 6.06 6" />
+                                                </svg>
+                                                ลบ
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
+                                <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                            
+                                    <img class="h-20 w-20 dark:hidden" src="img/menu5.jfif" alt="imac image" />
+                            
+                            
+                                    <div class="flex items-center justify-between md:order-3 md:justify-end">
+                                        <div class="flex items-center">
+                            
+                                        </div>
+                                        <div class="text-end md:order-4 md:w-32">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">100 บาท</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
+                                        <p class="text-base font-medium text-gray-900 dark:text-white">กบทอดกระเทียม</p>
+                            
+                                        <div class="flex items-center gap-4">
+                                            <button type="button"
+                                                class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
+                                                <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M6 18 17.94 6M18 18 6.06 6" />
+                                                </svg>
+                                                ลบ
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
+                                <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                            
+                                    <img class="h-20 w-20 dark:hidden" src="img/menu4.jfif" alt="imac image" />
+                            
+                            
+                                    <div class="flex items-center justify-between md:order-3 md:justify-end">
+                                        <div class="flex items-center">
+                            
+                                        </div>
+                                        <div class="text-end md:order-4 md:w-32">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">270 บาท</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
+                                        <p class="text-base font-medium text-gray-900 dark:text-white">ปลากระพงทอดกระเทียม</p>
+                            
+                                        <div class="flex items-center gap-4">
+                                            <button type="button"
+                                                class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
+                                                <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M6 18 17.94 6M18 18 6.06 6" />
+                                                </svg>
+                                                ลบ
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
+                        <div
+                            class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+                            <p class="text-xl font-semibold text-gray-900 dark:text-white">สรุปราคา</p>
+
+                            <div class="space-y-4">
+                                <div class="space-y-2">
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">ต้มยำกุ้ง
+                                        </dt>
+                                        <dd class="text-base font-medium text-gray-900 dark:text-white">150 บาท</dd>
+                                    </dl>
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">กบทอดกระเทียม
+                                        </dt>
+                                        <dd class="text-base font-medium text-gray-900 dark:text-white">100 บาท</dd>
+                                    </dl>
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">
+                                            ปลากระพงทอดกระเทียม</dt>
+                                        <dd class="text-base font-medium text-gray-900 dark:text-white">270 บาท</dd>
+                                    </dl>
+                                </div>
+                                <dl
+                                    class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
+                                    <dt class="text-base font-bold text-gray-900 dark:text-white">รวมทั้งสิ้น</dt>
+                                    <dd class="text-base font-medium text-green-600">520 บาท</dd>
+                                </dl>
+                            </div>
+
+                            <button href="#"
+                                class="flex w-full items-center justify-center rounded-lg bg-indigo-500 hover:bg-indigo-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300">ชำระเงิน</button>
+
+                            <div class="flex items-center justify-center gap-2">
+                                <span class="text-sm font-normal text-gray-500 dark:text-gray-400"> หรือ </span>
+                                <a href="menu.html" title=""
+                                    class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">
+                                    เพิ่มรายการอาหาร
+                                    <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+    <section class="py-8 antialiased md:py-16">
+        <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">ตะกร้าสินค้า</h2>
+            <form action="#" method="post">
+                <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+                    <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
+                        <div id="orderContainer" class="space-y-6">
+                            <!-- สินค้าในตะกร้าจะแสดงที่นี่ -->
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
+                        <div class="space-y-4 rounded-lg border bg-white p-4 shadow-sm sm:p-6">
+                            <p class="text-xl font-semibold text-gray-900 dark:text-white">สรุปราคา</p>
+                            <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2">
+                                <dt class="text-base font-bold text-gray-900 dark:text-white">รวมทั้งสิ้น</dt>
+                                <dd id="totalPrice" class="text-base font-medium text-green-600">0 บาท</dd>
+                            </dl>
+                            <button href="#"
+                                class="flex w-full items-center justify-center rounded-lg bg-indigo-500 hover:bg-indigo-700 px-5 py-2.5 text-sm font-medium text-white">ชำระเงิน</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-4 md:p-8 lg:p-10 font-sans">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                <img src="img/Logo.png" class="h-20" alt="ครัว ก.ระกา" />
+                ครัว ก.ระกา
+            </a>
+            <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                <li>
+                    <a href="index.html" class="mr-4 hover:underline md:mr-6">หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="mr-4 hover:underline md:mr-6">รายการอาหาร</a>
+                </li>
+                <li>
+                    <a href="about.html" class="mr-4 hover:underline md:mr-6">เกี่ยวกับร้าน</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="mr-4 hover:underline md:mr-6">ติดต่อ</a>
+                </li>
+            </ul>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html"
+                    class="hover:underline">ครัว ก.ระกา</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        let cart = [];
+
+            // ฟังก์ชันโหลดข้อมูลตะกร้าจาก localStorage
+            window.onload = () => {
+                const storedCart = localStorage.getItem('cart');
+                if (storedCart) {
+                    cart = JSON.parse(storedCart);
+                    updateCartDisplay();
+                }
+            };
+
+            // ฟังก์ชันแสดงสินค้าที่อยู่ในตะกร้า
+            const updateCartDisplay = () => {
+                const orderContainer = document.getElementById('orderContainer');
+                let totalPrice = 0;
+
+                orderContainer.innerHTML = ''; // เคลียร์สินค้าที่แสดงก่อนหน้า
+                cart.forEach((product, index) => {
+                    totalPrice += parseInt(product.price.replace(' บาท', '')); // แปลงราคาจาก string เป็นตัวเลข
+                    orderContainer.innerHTML += `
+      <div class="rounded-lg border bg-white p-4 shadow-sm">
+          <div class="space-y-4 md:flex md:items-center md:justify-between">
+              <img class="h-20 w-20" src="${product.image}" alt="${product.name}" />
+              <div class="text-base font-medium text-gray-900">${product.name}</div>
+              <div class="text-base font-bold text-gray-900">${product.price}</div>
+              <button onclick="removeFromCart(${index})" class="text-red-600 hover:underline">ลบ</button>
+          </div>
+      </div>`;
+                });
+
+                document.getElementById('totalPrice').innerText = totalPrice + ' บาท'; // แสดงราคารวม
+            };
+
+            // ฟังก์ชันลบสินค้าออกจากตะกร้า
+            const removeFromCart = (index) => {
+                cart.splice(index, 1);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartDisplay();
+            };
+
+    </script>
+</body>
+
+</html>
