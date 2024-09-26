@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/assets/css/tailwind.min.css" rel="stylesheet" />
+    <title>About</title>
+</head>
+
+<body class="bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-cover">
+    <nav class="py-5 border-b-default border-solid border-gray-200 z-20 w-full bg-inherit lg:fixed" id="topnav">
+        <div class="mx-auto max-w-7xl  lg:px-8">
+            <div class="w-full flex flex-col lg:flex-row">
+                <div class="flex justify-between lg:hidden px-4">
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/Logo.png" alt="ครัว ก.ระกา" class='w-20 h-20' />
+                    </a>
+                    <button data-collapse-toggle="navbar" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden w-full lg:flex justify-between max-lg:bg-white py-5 max-lg:mt-1 max-lg:px-4 max-lg:shadow-lg max-lg:shadow-gray-200 max-lg:h-auto max-lg:overflow-auto transition-all duration-500 delay-200 "
+                    id="navbar">
+                    <ul
+                        class="flex lg:items-center max-lg:gap-4 max-lg:mb-4 flex-col mt-4 lg:flex-1 md:mt-0 lg:flex-row">
+                        <li>
+                            <a href="index.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">หน้าแรก</a>
+                        </li>
+                        <li>
+                            <a href="menu.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">รายการอาหาร</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">เกี่ยวกับร้าน</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900">ติดต่อ</a>
+                        </li>
+                    </ul>
+                    <a href="index.html" class="hidden lg:flex items-center">
+                        <img src="img/Logo.png" alt="ครัว ก.ระกา" class='w-20 h-20' />
+                    </a>
+                    <div
+                        class="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:flex-1 lg:justify-end">
+                        <div class='flex items-center space-x-8'>
+                            <span class="relative">
+                                <a href="order.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        class="cursor-pointer fill-[#333] inline" viewBox="0 0 512 512">
+                                        <path
+                                            d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                            data-original="#000000"></path>
+                                    </svg>
+                                </a>
+                                <span
+                                    class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"
+                                    id="cartItemCount">0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav><br><br>
+
+    <!-- ====== About Section Start -->
+    <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between -mx-4">
+                <div class="w-full px-4 lg:w-6/12">
+                    <div class="flex items-center -mx-3 sm:-mx-4">
+                        <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                            <div class="py-3 sm:py-4">
+                                <img src="img/1.jpg" alt="" class="w-full rounded-2xl" />
+                            </div>
+                            <div class="py-3 sm:py-4">
+                                <img src="img/2.jpg" alt="" class="w-full rounded-2xl" />
+                            </div>
+                        </div>
+                        <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                            <div class="relative z-10 my-4">
+                                <img src="img/3.jpg" alt="" class="w-full rounded-2xl" />
+                                <span class="absolute -right-7 -bottom-7 z-[-1]">
+                                    <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="1.66667" cy="104" r="1.66667" transform="rotate(-90 1.66667 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="16.3333" cy="104" r="1.66667" transform="rotate(-90 16.3333 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="31" cy="104" r="1.66667" transform="rotate(-90 31 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="45.6667" cy="104" r="1.66667" transform="rotate(-90 45.6667 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="60.3334" cy="104" r="1.66667" transform="rotate(-90 60.3334 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="88.6667" cy="104" r="1.66667" transform="rotate(-90 88.6667 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="117.667" cy="104" r="1.66667" transform="rotate(-90 117.667 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="74.6667" cy="104" r="1.66667" transform="rotate(-90 74.6667 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="103" cy="104" r="1.66667" transform="rotate(-90 103 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="104" r="1.66667" transform="rotate(-90 132 104)"
+                                            fill="#3056D3" />
+                                        <circle cx="1.66667" cy="89.3333" r="1.66667"
+                                            transform="rotate(-90 1.66667 89.3333)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="89.3333" r="1.66667"
+                                            transform="rotate(-90 16.3333 89.3333)" fill="#3056D3" />
+                                        <circle cx="31" cy="89.3333" r="1.66667" transform="rotate(-90 31 89.3333)"
+                                            fill="#3056D3" />
+                                        <circle cx="45.6667" cy="89.3333" r="1.66667"
+                                            transform="rotate(-90 45.6667 89.3333)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="89.3338" r="1.66667"
+                                            transform="rotate(-90 60.3333 89.3338)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="89.3338" r="1.66667"
+                                            transform="rotate(-90 88.6667 89.3338)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="89.3338" r="1.66667"
+                                            transform="rotate(-90 117.667 89.3338)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="89.3338" r="1.66667"
+                                            transform="rotate(-90 74.6667 89.3338)" fill="#3056D3" />
+                                        <circle cx="103" cy="89.3338" r="1.66667" transform="rotate(-90 103 89.3338)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="89.3338" r="1.66667" transform="rotate(-90 132 89.3338)"
+                                            fill="#3056D3" />
+                                        <circle cx="1.66667" cy="74.6673" r="1.66667"
+                                            transform="rotate(-90 1.66667 74.6673)" fill="#3056D3" />
+                                        <circle cx="1.66667" cy="31.0003" r="1.66667"
+                                            transform="rotate(-90 1.66667 31.0003)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="74.6668" r="1.66667"
+                                            transform="rotate(-90 16.3333 74.6668)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="31.0003" r="1.66667"
+                                            transform="rotate(-90 16.3333 31.0003)" fill="#3056D3" />
+                                        <circle cx="31" cy="74.6668" r="1.66667" transform="rotate(-90 31 74.6668)"
+                                            fill="#3056D3" />
+                                        <circle cx="31" cy="31.0003" r="1.66667" transform="rotate(-90 31 31.0003)"
+                                            fill="#3056D3" />
+                                        <circle cx="45.6667" cy="74.6668" r="1.66667"
+                                            transform="rotate(-90 45.6667 74.6668)" fill="#3056D3" />
+                                        <circle cx="45.6667" cy="31.0003" r="1.66667"
+                                            transform="rotate(-90 45.6667 31.0003)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="74.6668" r="1.66667"
+                                            transform="rotate(-90 60.3333 74.6668)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="30.9998" r="1.66667"
+                                            transform="rotate(-90 60.3333 30.9998)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="74.6668" r="1.66667"
+                                            transform="rotate(-90 88.6667 74.6668)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="30.9998" r="1.66667"
+                                            transform="rotate(-90 88.6667 30.9998)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="74.6668" r="1.66667"
+                                            transform="rotate(-90 117.667 74.6668)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="30.9998" r="1.66667"
+                                            transform="rotate(-90 117.667 30.9998)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="74.6668" r="1.66667"
+                                            transform="rotate(-90 74.6667 74.6668)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="30.9998" r="1.66667"
+                                            transform="rotate(-90 74.6667 30.9998)" fill="#3056D3" />
+                                        <circle cx="103" cy="74.6668" r="1.66667" transform="rotate(-90 103 74.6668)"
+                                            fill="#3056D3" />
+                                        <circle cx="103" cy="30.9998" r="1.66667" transform="rotate(-90 103 30.9998)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="74.6668" r="1.66667" transform="rotate(-90 132 74.6668)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="30.9998" r="1.66667" transform="rotate(-90 132 30.9998)"
+                                            fill="#3056D3" />
+                                        <circle cx="1.66667" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 1.66667 60.0003)" fill="#3056D3" />
+                                        <circle cx="1.66667" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 1.66667 16.3333)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 16.3333 60.0003)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 16.3333 16.3333)" fill="#3056D3" />
+                                        <circle cx="31" cy="60.0003" r="1.66667" transform="rotate(-90 31 60.0003)"
+                                            fill="#3056D3" />
+                                        <circle cx="31" cy="16.3333" r="1.66667" transform="rotate(-90 31 16.3333)"
+                                            fill="#3056D3" />
+                                        <circle cx="45.6667" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 45.6667 60.0003)" fill="#3056D3" />
+                                        <circle cx="45.6667" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 45.6667 16.3333)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 60.3333 60.0003)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 60.3333 16.3333)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 88.6667 60.0003)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 88.6667 16.3333)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 117.667 60.0003)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 117.667 16.3333)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="60.0003" r="1.66667"
+                                            transform="rotate(-90 74.6667 60.0003)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="16.3333" r="1.66667"
+                                            transform="rotate(-90 74.6667 16.3333)" fill="#3056D3" />
+                                        <circle cx="103" cy="60.0003" r="1.66667" transform="rotate(-90 103 60.0003)"
+                                            fill="#3056D3" />
+                                        <circle cx="103" cy="16.3333" r="1.66667" transform="rotate(-90 103 16.3333)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="60.0003" r="1.66667" transform="rotate(-90 132 60.0003)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="16.3333" r="1.66667" transform="rotate(-90 132 16.3333)"
+                                            fill="#3056D3" />
+                                        <circle cx="1.66667" cy="45.3333" r="1.66667"
+                                            transform="rotate(-90 1.66667 45.3333)" fill="#3056D3" />
+                                        <circle cx="1.66667" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 1.66667 1.66683)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="45.3333" r="1.66667"
+                                            transform="rotate(-90 16.3333 45.3333)" fill="#3056D3" />
+                                        <circle cx="16.3333" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 16.3333 1.66683)" fill="#3056D3" />
+                                        <circle cx="31" cy="45.3333" r="1.66667" transform="rotate(-90 31 45.3333)"
+                                            fill="#3056D3" />
+                                        <circle cx="31" cy="1.66683" r="1.66667" transform="rotate(-90 31 1.66683)"
+                                            fill="#3056D3" />
+                                        <circle cx="45.6667" cy="45.3333" r="1.66667"
+                                            transform="rotate(-90 45.6667 45.3333)" fill="#3056D3" />
+                                        <circle cx="45.6667" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 45.6667 1.66683)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="45.3338" r="1.66667"
+                                            transform="rotate(-90 60.3333 45.3338)" fill="#3056D3" />
+                                        <circle cx="60.3333" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 60.3333 1.66683)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="45.3338" r="1.66667"
+                                            transform="rotate(-90 88.6667 45.3338)" fill="#3056D3" />
+                                        <circle cx="88.6667" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 88.6667 1.66683)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="45.3338" r="1.66667"
+                                            transform="rotate(-90 117.667 45.3338)" fill="#3056D3" />
+                                        <circle cx="117.667" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 117.667 1.66683)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="45.3338" r="1.66667"
+                                            transform="rotate(-90 74.6667 45.3338)" fill="#3056D3" />
+                                        <circle cx="74.6667" cy="1.66683" r="1.66667"
+                                            transform="rotate(-90 74.6667 1.66683)" fill="#3056D3" />
+                                        <circle cx="103" cy="45.3338" r="1.66667" transform="rotate(-90 103 45.3338)"
+                                            fill="#3056D3" />
+                                        <circle cx="103" cy="1.66683" r="1.66667" transform="rotate(-90 103 1.66683)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="45.3338" r="1.66667" transform="rotate(-90 132 45.3338)"
+                                            fill="#3056D3" />
+                                        <circle cx="132" cy="1.66683" r="1.66667" transform="rotate(-90 132 1.66683)"
+                                            fill="#3056D3" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+                    <div class="mt-10 lg:mt-0">
+                        <span class="block mb-4 text-lg font-semibold text-primary">
+                            เกี่ยวกับร้าน
+                        </span>
+                        <h2 class="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+                            ครัว ก.ระกา
+                        </h2>
+                        <p class="mb-5 text-base text-body-color dark:text-dark-6">
+                            ร้าน ครัวกระ กา เปิดมานานมากกว่า 10 ปีแต่ก่อนร้านเคยตั้งอยู่ติวานนท์
+                            แล้วให้ย้ายมาอีกที่อยู่ตรงซอย10000ย่านบางศรีเมืองแล้วปัจจุบันร้านได้
+                            เปลี่ยนมาตั้งที่ตรงข้ามการไฟฟ้านครามทรงแถวนางใหญ่เก่าร้านองค์อยขึ้น
+                            ชื่อเรื่องความอร่ยจุดเด่นคือน้ำตกที่มีรสชาติที่เข้มข้นถึงใจจึงทำให้ร้านมี
+                            ถูกค้าประจำที่มากินอยู่บ่อยๆแล้วให้ได้มีแต่ก๋วยเกี่ยวอย่างเดียวยังมีลูกชิ้น
+                            ปังที่ขึ้นชื่อเรื่องน้ำจิ๋มเจ้าของมายาน้ำจิ้มแทบตา
+                        </p>
+
+                        <p class="mb-8 text-base text-body-color dark:text-dark-6">
+                            ✔ อร่อย<br>
+                            ✔ สะอาด<br>
+                            ✔ ได้มาตรฐาน<br>
+                        </p>
+                        <!-- <a href="javascript:void(0)"
+                            class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90">
+                            Get Started
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== About Section End -->
+
+    <br><br><br>
+
+    <footer class="p-4 md:p-8 lg:p-10 font-sans">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+                <img src="./img/logo.png" class="h-20" alt="Smalldog Milk Tea" />
+                Smalldog Milk Tea
+            </a>
+            <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                <li>
+                    <a href="index.html" class="mr-4 hover:underline md:mr-6">หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="mr-4 hover:underline md:mr-6">เมนู</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="mr-4 hover:underline md:mr-6">ติดต่อ</a>
+                </li>
+            </ul>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html"
+                    class="hover:underline">Smalldog Milk Tea</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
